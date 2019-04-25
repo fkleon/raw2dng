@@ -1,0 +1,11 @@
+--- raw2dng/CMakeLists.txt	2019-04-26 10:46:59.254426991 +1200
++++ raw2dng/CMakeLists.txt.patched	2019-04-26 11:00:38.227522146 +1200
+@@ -10,7 +10,7 @@
+ # configure a header file to pass some of the CMake settings
+ # to the source code
+ CONFIGURE_FILE ( "${CMAKE_CURRENT_SOURCE_DIR}/config.h.cmake"
+-                 "${CMAKE_CURRENT_BINARY_DIR}/config.h" )
++                 "${CMAKE_CURRENT_SOURCE_DIR}/config.h" )
+ 
+ SET( EXIV2_MIN_VERSION "0.21" )
+ FIND_PACKAGE( Exiv2 )

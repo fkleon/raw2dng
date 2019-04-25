@@ -1,0 +1,10 @@
+--- raw2dng/rawConverter.h	2019-04-26 10:46:59.254426991 +1200
++++ raw2dng/rawConverter.h.patched	2019-04-26 10:56:52.391910273 +1200
+@@ -20,6 +20,7 @@
+ 
+ #include "negativeProcessor.h"
+ 
++#include <functional>
+ #include <string>
+ 
+ #include "dng_auto_ptr.h"
